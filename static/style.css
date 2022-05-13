@@ -1,0 +1,60 @@
+.container_out {
+            width: 1000px;
+            margin: 0 auto;
+            border: 5px solid;
+            border-color: black;
+            background-color: white;
+            margin-top: 100px;
+            margin-bottom: 100px;
+}
+
+p {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.container_left {
+    background-color: rgb(192, 192, 192);
+    width: 400px;
+    /* border-radius: 15px; */
+    float: left;
+    transform: rotateY(180deg);
+
+}
+
+.container_right {
+    background-color: rgb(192, 192, 192);
+    width: 400px;
+    /* border-radius: 15px; */
+    float: right;
+
+}
+
+.skill {
+    background-color: #546575;
+    color: white;
+    height: 25px;
+
+}
+
+/* .left{
+    width: var(--left);
+}
+        
+.right{
+    width: var(--right);
+} */
+
+.zero {
+    margin-left: 455px;
+    color:#848482;
+    
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>請輸入帳號密碼</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'loginstyle.css') }}">
+</head>
+
+<body>
+        <form class="box" method="POST" action="http://220.143.64.122:5005/">
+            <h1>
+                Login
+            </h1>
+
+            <td><input type="text" name="username" placeholder="Enter Username"></td>
+
+            <td><input type="password" name="password" placeholder="Enter Password"></td>
+
+            <td><input type="submit" value="登入"></td>
+
+            {% if error %}
+            <p><strong>Error</strong>: {{ error}}</p>
+            {% endif %}
+
+        </form>
+        
+    
+</body>
+
+</html>

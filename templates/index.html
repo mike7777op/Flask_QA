@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>表單</title>
+    <script type="text/javascript">
+        function chk() {
+            if (document.table.FQ.value == '') {
+                alert('第一題未填');
+                document.send.account.focus();
+                return false;
+            }
+            if (document.table.SQ.value == '') {
+                alert('第二題未填');
+                document.send.account.focus();
+                return false;
+            }
+            if (document.table.TQ.value == '') {
+                alert('第三題未填');
+                document.send.account.focus();
+                return false;
+            }
+            if (document.table.ForQ.value == '') {
+                alert('第四題未填');
+                document.send.account.focus();
+                return false;
+            }
+            if (document.table.FivQ.value == '') {
+                alert('第五題未填');
+                document.send.account.focus();
+                return false;
+            }
+            if (document.table.SixQ.value == '') {
+                alert('第六題未填');
+                document.send.account.focus();
+                return false;
+            }
+            if (document.table.SevQ.value == '') {
+                alert('第七題未填');
+                document.send.account.focus();
+                return false;
+            }
+            if (document.table.EigQ.value == '') {
+                alert('第八題未填');
+                document.send.account.focus();
+                return false;
+            }
+            if (document.table.NinQ.value == '') {
+                alert('第九題未填');
+                document.send.account.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>順應年代，科技的評分表，這是給偶最棒的鼓勵跟改善!</h1>
+    <form method="POST" name="table">
+        <h3>以下有九題，請評斷這次見面的感受，每次的評分會做一個加總，有的話會對這個選項的總分加1分，反之則扣1分</h3>
+        {{ form.csrf_token() }}
+        <p>第一題:</p>
+        {{ form.FQ.label }} {{ form.FQ }}
+        <hr/>
+        <br/>
+        <p>第二題:</p>
+        {{ form.SQ.label }} {{ form.SQ }}
+        <hr />
+        <br />
+        <p>第三題:</p>
+        {{ form.TQ.label }} {{ form.TQ }}
+        <hr />
+        <br />
+        <p>第四題:</p>
+        {{ form.ForQ.label }} {{ form.ForQ }}
+        <hr />
+        <br />
+        <p>第五題:</p>
+        {{ form.FivQ.label }} {{ form.FivQ }}
+        <hr />
+        <br />
+        <p>第六題:</p>
+        {{ form.SixQ.label }} {{ form.SixQ }}
+        <hr />
+        <br />
+        <p>第七題:</p>
+        {{ form.SevQ.label }} {{ form.SevQ }}
+        <hr />
+        <br />
+        <p>第八題:</p>
+        {{ form.EigQ.label }} {{ form.EigQ }}
+        <hr />
+        <br />
+        <p>第九題:</p>
+        {{ form.NinQ.label }} {{ form.NinQ }}
+        <hr />
+        <br />
+        <!-- {{ form.submit }} -->
+        <p><input type="submit" onclick="chk();" value="送出資料"></p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=big5">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+
+    
+</head>
+
+<body style="background-color: rgb(242, 242, 242)">
+    <div class="container_out">
+        <p>自在</p>
+        <div class="container">
+            {% if fA == 0%}
+                <div class="container_left">
+                    <div class="skill left" style="width: 0%;"></div>
+                </div>
+                <div class="container_right">
+                    <div class="skill right" style="width: 0%;"></div>
+                </div>
+            {% elif fA > 0 %}
+                <div class="container_left">
+                    <div class="skill left" style="width: 0%;"></div>
+                </div>
+                <div class="container_right">
+                    <div class="skill right" style="width: {{ fA_str }};"></div>
+                </div>
+            {% elif fA < 0 %}
+                <div class="container_left">
+                    <div class="skill left" style="width: {{ fA_str }};"></div>
+                </div>
+                <div class="container_right">
+                    <div class="skill right" style="width: 0%;"></div>
+                </div>
+            {% endif %}
+            <p>{{ fA }}</p>
+        </div>
+        <p class="zero">0</p>
+        <hr>
+        <p>安全感</p>
+        <div class="container">
+            {% if sA == 0%}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% elif sA > 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: {{ sA_str }};"></div>
+            </div>
+            {% elif sA < 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: {{ sA_str }};"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% endif %}
+            <p>{{ sA }}</p>
+            
+        </div>
+        <p class="zero">0</p>
+        <hr>
+        <p>整潔(內心感受)</p>
+        <div class="container">
+            {% if tA == 0%}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% elif tA > 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: {{ tA_str }};"></div>
+            </div>
+            {% elif tA < 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: {{ tA_str }};"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% endif %}
+            <p>{{ tA }}</p>
+        </div>
+        <p class="zero">0</p>
+        <hr>
+        <p>開心</p>
+        <div class="container">
+            {% if forA == 0%}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% elif forA > 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: {{ forA_str }};"></div>
+            </div>
+            {% elif forA < 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: {{ forA_str }};"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% endif %}
+            <p>{{ forA }}</p>
+        </div>
+        <p class="zero">0</p>
+        <hr>
+        <p>努力</p>
+        <div class="container">
+            {% if fivA == 0%}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% elif fivA > 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: {{ fivA_str }};"></div>
+            </div>
+            {% elif fivA < 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: {{ fivA_str }};"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% endif %}
+            <p>{{ fivA }}</p>
+        </div>
+        <p class="zero">0</p>
+        <hr>
+        <p>體貼</p>
+        <div class="container">
+            {% if sixA == 0%}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% elif sixA > 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: {{ sixA_str }};"></div>
+            </div>
+            {% elif sixA < 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: {{ sixA_str }};"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% endif %}
+            <p>{{ sixA }}</p>
+        </div>
+        <p class="zero">0</p>
+        <hr>
+        <p>浪漫</p>
+        <div class="container">
+            {% if sevA == 0%}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% elif sevA > 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: {{ sevA_str }};"></div>
+            </div>
+            {% elif sevA < 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: {{ sevA_str }};"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% endif %}
+            <p>{{ sevA }}</p>
+        </div>
+        <p class="zero">0</p>
+        <hr>
+        <p>不切實際</p>
+        <div class="container">
+            {% if eigA == 0%}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% elif eigA > 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: {{ eigA_str }};"></div>
+            </div>
+            {% elif eigA < 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: {{ eigA_str }};"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% endif %}
+            <p>{{ eigA }}</p>
+        </div>
+        <p class="zero">0</p>
+        <hr>
+        <p>失望</p>
+        <div class="container">
+            {% if ninA == 0%}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% elif ninA > 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: 0%;"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: {{ ninA_str }};"></div>
+            </div>
+            {% elif ninA < 0 %}
+            <div class="container_left">
+                <div class="skill left" style="width: {{ ninA_str }};"></div>
+            </div>
+            <div class="container_right">
+                <div class="skill right" style="width: 0%;"></div>
+            </div>
+            {% endif %}
+            <p>{{ ninA }}</p>
+        </div>
+        <p class="zero">0</p>
+    </div>
+    
+</body>
+
+</html>
