@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>表單</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'index.css') }}">
     <script type="text/javascript">
         function chk() {
             if (document.table.FQ.value == '') {
@@ -57,49 +59,69 @@
 </head>
 
 <body>
-    <h1>順應年代，科技的評分表，這是給偶最棒的鼓勵跟改善!</h1>
-    <form method="POST" name="table">
-        <h3>以下有九題，請評斷這次見面的感受，每次的評分會做一個加總，有的話會對這個選項的總分加1分，反之則扣1分</h3>
-        {{ form.csrf_token() }}
-        <p>第一題:</p>
-        {{ form.FQ.label }} {{ form.FQ }}
-        <hr/>
-        <br/>
-        <p>第二題:</p>
-        {{ form.SQ.label }} {{ form.SQ }}
-        <hr />
-        <br />
-        <p>第三題:</p>
-        {{ form.TQ.label }} {{ form.TQ }}
-        <hr />
-        <br />
-        <p>第四題:</p>
-        {{ form.ForQ.label }} {{ form.ForQ }}
-        <hr />
-        <br />
-        <p>第五題:</p>
-        {{ form.FivQ.label }} {{ form.FivQ }}
-        <hr />
-        <br />
-        <p>第六題:</p>
-        {{ form.SixQ.label }} {{ form.SixQ }}
-        <hr />
-        <br />
-        <p>第七題:</p>
-        {{ form.SevQ.label }} {{ form.SevQ }}
-        <hr />
-        <br />
-        <p>第八題:</p>
-        {{ form.EigQ.label }} {{ form.EigQ }}
-        <hr />
-        <br />
-        <p>第九題:</p>
-        {{ form.NinQ.label }} {{ form.NinQ }}
-        <hr />
-        <br />
-        <!-- {{ form.submit }} -->
-        <p><input type="submit" onclick="chk();" value="送出資料"></p>
-    </form>
+    <div class="container">
+        <h1>順應年代，科技的評分表，這是給偶最棒的鼓勵跟改善!</h1>
+        <form method="POST" name="table">
+            <h3>以下有九題，請評斷這次見面的感受，每次的評分會做一個加總，有的話會對這個選項的總分加1分，反之則扣1分</h3>
+            {{ form.csrf_token() }}
+            <p>第一題:</p>
+            <div class="form">
+                {{ form.FQ.label }} {{ form.FQ }}
+            </div>
+            <hr />
+            <br />
+            <p>第二題:</p>
+            <div class="form">
+                {{ form.SQ.label }} {{ form.SQ }}
+            </div>
+            <hr />
+            <br />
+            <p>第三題:</p>
+            <div class="form">
+                {{ form.TQ.label }} {{ form.TQ }}
+            </div>
+            <hr />
+            <br />
+            <p>第四題:</p>
+            <div class="form">
+                {{ form.ForQ.label }} {{ form.ForQ }}
+            </div>
+            <hr />
+            <br />
+            <p>第五題:</p>
+            <div class="form">
+                {{ form.FivQ.label }} {{ form.FivQ }}
+            </div>
+            <hr />
+            <br />
+            <p>第六題:</p>
+            <div class="form">
+                {{ form.SixQ.label }} {{ form.SixQ }}
+            </div>
+            <hr />
+            <br />
+            <p>第七題:</p>
+            <div class="form">
+                {{ form.SevQ.label }} {{ form.SevQ }}
+            </div>
+            <hr />
+            <br />
+            <p>第八題:</p>
+            <div class="form">
+                {{ form.EigQ.label }} {{ form.EigQ }}
+            </div>
+            <hr />
+            <br />
+            <p>第九題:</p>
+            <div class="form">
+                {{ form.NinQ.label }} {{ form.NinQ }}
+            </div>
+            <hr />
+            <br />
+            <!-- {{ form.submit }} -->
+            <p class="submit"><input type="submit" onclick="chk();" value="送出資料"></p>
+        </form>
+    </div>
 </body>
 
 </html>

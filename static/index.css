@@ -1,0 +1,40 @@
+p{
+    font-size: 25px;
+    
+}
+
+.container{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.form{
+    font-size: 20px;
+    margin: 20px;
+}
+input[type=submit]{
+    font-size: 20px;
+    /* width: 20em;
+    height: 2em; */
+}
+@media(max-width:858px){
+    p{
+    font-size: 15px;
+    
+    }
+
+    .container{
+        font-size: 10px;
+        margin: 1px;
+    }
+
+    .form{
+        font-size: 10px;
+        margin: 5px;
+    }
+    input[type=submit]{
+        font-size: 10px;
+        /* width: 20em;
+        height: 2em; */
+    }
+}

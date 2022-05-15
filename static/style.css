@@ -9,7 +9,7 @@
 }
 
 p {
-    font-size: 20px;
+    font-size: 25px;
     margin: 20px;
 }
 
@@ -24,7 +24,8 @@ p {
 .container_left {
     background-color: rgb(192, 192, 192);
     width: 400px;
-    /* border-radius: 15px; */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     float: left;
     transform: rotateY(180deg);
 
@@ -33,7 +34,8 @@ p {
 .container_right {
     background-color: rgb(192, 192, 192);
     width: 400px;
-    /* border-radius: 15px; */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     float: right;
 
 }
@@ -44,17 +46,101 @@ p {
     height: 25px;
 
 }
-
-/* .left{
-    width: var(--left);
-}
-        
 .right{
-    width: var(--right);
-} */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.left{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 
 .zero {
-    margin-left: 455px;
+    margin-left: 440px;
+    color:#848482;
+    margin-top: -20px;
+    
+}
+.middle-line{
+    width: 20px;
+    height: 25px;
+    border-right: solid black;
+    margin-left: -20px;
+}
+
+
+@media(max-width:952px){
+    .container_out {
+        width: 800px;
+        margin: 0 auto;
+        border: 5px solid;
+        border-color: black;
+        background-color: white;
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+    p {
+        font-size: 25px;
+        margin: 20px;
+    }
+    .zero {
+    margin-left: 370px;
     color:#848482;
     
+    }
+
+}
+
+@media(max-width:858px){
+    .container_out {
+        width: 350px;
+        margin: 0 auto;
+        border: 5px solid;
+        border-color: black;
+        background-color: white;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 15px;
+        margin: 15px;
+    }
+    .container p{
+        font-size: 10px;
+        margin: 5px;
+    }
+
+    .zero {
+    margin-left: 150px;
+    color:#848482;
+    
+    }
+    .container_left {
+    background-color: rgb(192, 192, 192);
+    width: 130px;
+    height: 20px;
+    /* border-radius: 15px; */
+    float: left;
+    transform: rotateY(180deg);
+
+}
+
+    .container_right {
+    background-color: rgb(192, 192, 192);
+    width: 130px;
+    height: 20px;
+    float: right;
+    }
+    .middle-line{
+    width: 5px;
+    height: 20px;
+    border-right: solid black;
+    margin-left: -5px;
+    }
+    .skill {
+    background-color: #546575;
+    color: white;
+    height: 20px;
+
+}
 }

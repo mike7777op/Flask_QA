@@ -43,15 +43,15 @@ class Answer(db.Model):
 db.create_all()
 
 class QAForm(FlaskForm):
-    FQ = RadioField(label='自在', coerce=int, choices=[(1,'有'),(-1,'沒有')], validators=[InputRequired()])
-    SQ = RadioField(label='安全感', coerce=int, choices=[(1,'有'),(-1,'沒有')], validators=[InputRequired()])
-    TQ = RadioField(label='整潔(內心感受)', coerce=int, choices=[(1,'有'),(-1,'沒有')], validators=[InputRequired()])
-    ForQ = RadioField(label='開心', coerce=int, choices=[(1,'有'),(-1,'沒有')], validators=[InputRequired()])
-    FivQ = RadioField(label='努力', coerce=int, choices=[(1,'有'),(-1,'沒有')], validators=[InputRequired()])
-    SixQ = RadioField(label='體貼', coerce=int, choices=[(1,'有'),(-1,'沒有')], validators=[InputRequired()])
-    SevQ = RadioField(label='浪漫', coerce=int, choices=[(1,'有'),(-1,'沒有')], validators=[InputRequired()])
-    EigQ = RadioField(label='不切實際', coerce=int, choices=[(1,'有'),(-1,'沒有')], validators=[InputRequired()])
-    NinQ = RadioField(label='失望', coerce=int, choices=[(1,'有'),(-1,'沒有')], validators=[InputRequired()])
+    FQ = RadioField(label='自在', coerce=int, choices=[(1,'+1'),(-1,'-1')], validators=[InputRequired()])
+    SQ = RadioField(label='安全感', coerce=int, choices=[(1,'+1'),(-1,'-1')], validators=[InputRequired()])
+    TQ = RadioField(label='整潔(內心感受)', coerce=int, choices=[(1,'+1'),(-1,'-1')], validators=[InputRequired()])
+    ForQ = RadioField(label='開心', coerce=int, choices=[(1,'+1'),(-1,'-1')], validators=[InputRequired()])
+    FivQ = RadioField(label='努力', coerce=int, choices=[(1,'+1'),(-1,'-1')], validators=[InputRequired()])
+    SixQ = RadioField(label='體貼', coerce=int, choices=[(1,'+1'),(-1,'-1')], validators=[InputRequired()])
+    SevQ = RadioField(label='浪漫', coerce=int, choices=[(1,'+1'),(-1,'-1')], validators=[InputRequired()])
+    EigQ = RadioField(label='不切實際', coerce=int, choices=[(1,'+1'),(-1,'-1')], validators=[InputRequired()])
+    NinQ = RadioField(label='失望', coerce=int, choices=[(1,'+1'),(-1,'-1')], validators=[InputRequired()])
 
     submit = SubmitField(label='送出資料')
 

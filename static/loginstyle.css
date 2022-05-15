@@ -61,3 +61,18 @@ body{
 {
     background-color: #ffc400ec;
 }
+
+@media(max-width:858px){
+    .box{
+        width: 300px;
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: white;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+}
