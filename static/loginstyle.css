@@ -28,7 +28,7 @@ body{
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 3px solid #0367fd;
+    border: 3px solid #546575;
     padding: 14px 10px;
     width: 220px;
     outline: none;
@@ -39,7 +39,7 @@ body{
 .box input[type='text']:focus,.box input[type='password']:focus
 {
     width: 270px;
-    border-color: #ffc400ec;
+    border-color: #353d45;
 }
 .box input[type='submit']
 {
@@ -48,7 +48,7 @@ body{
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 3px solid #ffc400ec;
+    border: 3px solid #546575;
     padding: 14px 10px;
     outline: none;
     color: black;
@@ -59,7 +59,8 @@ body{
 }
 .box input[type='submit']:hover
 {
-    background-color: #ffc400ec;
+    background-color: #546575;
+    color: white;
 }
 
 @media(max-width:858px){
